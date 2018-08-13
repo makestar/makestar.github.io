@@ -138,7 +138,7 @@ var Component = createReactClass({
 
 기존에는 ref=this.myRef로 사용했으면 됬지만 이제는 constructor에 미리 명시를 해주고 사용할때도 ref={this.myRef}로 사용하여야 한다. 자세한 설명은 다음 링크 참조
 
-##### [Refs and the DOM - React][ref]
+##### [Refs and the DOM - React][ref-dom]
 
 ```
 class MyComponent extends React.Component {
@@ -194,7 +194,7 @@ Switch  from react-addons-css-transition-group to react-transition-group
 -----------------------------------------------------------------
 
 더 이상 addons관련 라이브러리를 지원하지 않음에 따라 기존 오피셜 라이브러리로 변경하였다. 기존에 addons라이브러리에서 사용하던 ReactCSSTransitionGroup에서 새로운 라이브러리에서 CSSTransition로 바꾸었다. 자세한 내용은 아래 링크 참조
-##### [React Transition Group][trans-group]
+##### [React Transition Group][trans-group2]
 
 
 ```
@@ -281,6 +281,6 @@ import Scrollspy from 'react-scrollspy'
 [css-trans]: https://github.com/reactjs/react-transition-group
 [trans-group] : https://github.com/reactjs/react-transition-group
 [imm-helper] : https://github.com/kolodny/immutability-helper
-[ref] : https://reactjs.org/docs/refs-and-the-dom.html
+[ref-dom] : https://reactjs.org/docs/refs-and-the-dom.html
 [redux-auth] : https://mjrussell.github.io/redux-auth-wrapper/docs/Migrating.html
-[trans-group]: http://reactcommunity.org/react-transition-group/
+[trans-group2]: http://reactcommunity.org/react-transition-group/
