@@ -120,6 +120,7 @@ var Component = createReactClass({
 
 * react-addons-css-transition-group - Use [react-transition-group/CSSTransitionGroup][css-trans] instead. Version 1.1.1 provides a drop-in replacement.
 
+[css-trans]: https://github.com/reactjs/react-transition-group
 * react-addons-linked-state-mixin - Explicitly set the `value` and `onChange` handler instead.
 
 * react-addons-pure-render-mixin - Use `React.PureComponent` instead.
@@ -128,8 +129,11 @@ var Component = createReactClass({
 
 * react-addons-transition-group - Use [react-transition-group/TransitionGroupinstead][trans-group]. Version 1.1.1 provides a drop-in replacement.
 
+[trans-group]: https://github.com/reactjs/react-transition-group
+
 * react-addons-update - Use [immutability-helper][imm-helper] instead, a drop-in replacement.
 
+[imm-helper]: https://github.com/kolodny/immutability-helper
 * react-linked-input - Explicitly set the `value` and `onChange` handler instead.
 
 
@@ -139,7 +143,7 @@ var Component = createReactClass({
 기존에는 ref=this.myRef로 사용했으면 됬지만 이제는 constructor에 미리 명시를 해주고 사용할때도 ref={this.myRef}로 사용하여야 한다. 자세한 설명은 다음 링크 참조
 
 ##### [Refs and the DOM - React][ref-dom]
-
+[ref-dom]: https://reactjs.org/docs/refs-and-the-dom.html
 ```
 class MyComponent extends React.Component {
   constructor(props) {
@@ -163,7 +167,7 @@ Upgrade Redux-auth-wrapper v1 → v2
 업그레이드가 되면서 함수에 인자들이 바뀌게 되었다. 자세한건 아래 링크 참조
 ##### [Migrating from V1 · GitBook][redux-auth]
 
-
+[redux-auth]: https://mjrussell.github.io/redux-auth-wrapper/docs/Migrating.html
 ```
 // Before (1.x and below)
 import { UserAuthWrapper } from 'redux-auth-wrapper'
@@ -195,7 +199,7 @@ Switch  from react-addons-css-transition-group to react-transition-group
 
 더 이상 addons관련 라이브러리를 지원하지 않음에 따라 기존 오피셜 라이브러리로 변경하였다. 기존에 addons라이브러리에서 사용하던 ReactCSSTransitionGroup에서 새로운 라이브러리에서 CSSTransition로 바꾸었다. 자세한 내용은 아래 링크 참조
 ##### [React Transition Group][trans-group2]
-
+[trans-group2]: http://reactcommunity.org/react-transition-group/
 
 ```
 // Before
@@ -275,12 +279,4 @@ import Scrollspy from 'react-scrollspy'
 ---------
 이번 업데이트를 하면서 2년전에 셋팅했던 것들이라서 많이 바뀌었다. 서버사이드 렌더나 클라이언트 사이드 렌더에서 성능향상이 있었다. 그리고 react-router도 v3에서 v4로 업그레이드를 해야하지만 손이 많이 가는 작업이기에 이번 업데이트를 하고 다음 단계로 진행하기로 하였다. 또한 서버사이드 렌더성능 향상을 위해서 노드 버젼을 올려야 할 것 같다.
 
-또한 React버젼이 업됨에 따라서 라이브러리들도 업데이트를 해줘야 하는데 안된 라이브러리들이 몇개 있었다. 살아있는 라이브러리를 사용하는 중요성에 대해 다시 한번 깨닫게 되었다.
-
-
-[css-trans]: https://github.com/reactjs/react-transition-group
-[trans-group] : https://github.com/reactjs/react-transition-group
-[imm-helper] : https://github.com/kolodny/immutability-helper
-[ref-dom] : https://reactjs.org/docs/refs-and-the-dom.html
-[redux-auth] : https://mjrussell.github.io/redux-auth-wrapper/docs/Migrating.html
-[trans-group2]: http://reactcommunity.org/react-transition-group/
+또한 React버젼이 업그레이드 됨에 따라서 라이브러리들도 업데이트를 해줘야 하는데 안된 라이브러리들이 몇개 있었다. 살아있는 라이브러리를 사용하는 중요성에 대해 다시 한번 깨닫게 되었다.
