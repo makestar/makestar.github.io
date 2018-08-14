@@ -1,6 +1,6 @@
 ---
-title: "React.js V16.3.2 적용"
-date: 2018-08-13 18:50:28 -0400
+title: "React.js V16.3.2 적용기"
+date: 2018-08-13 18:50:28
 categories: react
 author: Shane
 ---
